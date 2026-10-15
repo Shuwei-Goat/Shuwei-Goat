@@ -22,7 +22,7 @@ class ProfileChecks(unittest.TestCase):
   workflow=(ROOT/'.github/workflows/profile-assets.yml').read_text()
   for word in ['<sub','<small','streak','trophy','metrics','EXPLORATION LOG','THE SNAKE TRAIL','profile/stats.svg','profile/languages.svg','komarev.com']:
    self.assertNotIn(word,readme)
-  for word in ['STILL EXPLORING','NO LEVELS','把好奇心','角色已就位','PLAYER PROFILE']:
+  for word in ['STILL EXPLORING','NO LEVELS','把好奇心','角色已就位','PLAYER PROFILE','一只羊的开放世界']:
    self.assertNotIn(word,hero)
   for word in ['streak','trophy','metrics','METRICS_TOKEN','card: stats','card: top-langs','Platane/snk','promote.py']:
    self.assertNotIn(word,workflow)

@@ -1,5 +1,7 @@
 <p align="center">
-<img src="assets/hero-game-4k.png" alt="Shuwei-Goat · 一只羊的开放世界" width="1200" />
+<picture>
+<img src="assets/hero-game-4k-v2.png" alt="Shuwei-Goat" width="1200" />
+</picture>
 </p>
 <p align="center">
 <img src="profile/typing-game.svg" alt="Shuwei-Goat" width="620" />
