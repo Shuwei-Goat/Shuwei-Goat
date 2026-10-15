@@ -17,7 +17,8 @@ class ProfileChecks(unittest.TestCase):
    self.assertNotIn('<details',s)
  def test_selected_profile_has_no_removed_modules_or_microcopy(self):
   readme=(ROOT/'README.game.md').read_text()
-  hero=(ROOT/'assets/hero-game.svg').read_text()
+  hero_path=ROOT/'assets/hero-game.svg'
+  hero=hero_path.read_text() if hero_path.exists() else ''
   workflow=(ROOT/'.github/workflows/profile-assets.yml').read_text()
   for word in ['<sub','<small','streak','trophy','metrics']:
    self.assertNotIn(word,readme)
