@@ -1,0 +1,63 @@
+{
+  "stats": {
+    "state": "ok",
+    "checked_at": "2026-10-15T10:20:19.334554+00:00",
+    "http_status": 200,
+    "url": "https://github-readme-stats.vercel.app/api?username=Shuwei-Goat&disable_animations=true&show_icons=true&hide_rank=true&hide_border=true&title_color=45694F&text_color=354B3D&icon_color=79976B&bg_color=F5F5E9"
+  },
+  "languages": {
+    "state": "unavailable",
+    "checked_at": "2026-10-15T10:06:31.981342+00:00",
+    "error": "Upstream returned an error/empty-data card",
+    "url": "https://github-readme-stats.vercel.app/api/top-langs/?username=Shuwei-Goat&layout=compact&hide_border=true&title_color=608573&text_color=718279&bg_color=F5F7F5",
+    "last_success_at": null
+  },
+  "typing-game": {
+    "state": "ok",
+    "checked_at": "2026-10-15T10:20:21.834341+00:00",
+    "http_status": 200,
+    "url": "https://readme-typing-svg.demolab.com/?font=Fira+Code&size=26&duration=3200&pause=1400&color=45694F&center=true&vCenter=true&width=620&height=44&lines=Shuwei-Goat"
+  },
+  "views": {
+    "state": "ok",
+    "checked_at": "2026-10-15T10:06:40.755707+00:00",
+    "http_status": 200,
+    "url": "https://komarev.com/ghpvc/?username=Shuwei-Goat&label=visitors&color=88aa99&style=flat"
+  },
+  "skills-light": {
+    "state": "ok",
+    "checked_at": "2026-10-15T10:06:43.391783+00:00",
+    "http_status": 200,
+    "url": "https://skillicons.dev/icons?i=html,css,py,md&theme=light&perline=4"
+  },
+  "skills-dark": {
+    "state": "ok",
+    "checked_at": "2026-10-15T10:06:45.017664+00:00",
+    "http_status": 200,
+    "url": "https://skillicons.dev/icons?i=html,css,py,md&theme=dark&perline=4"
+  },
+  "github-icon": {
+    "state": "ok",
+    "checked_at": "2026-10-15T10:06:46.406334+00:00",
+    "http_status": 200,
+    "url": "https://cdn.simpleicons.org/github/80998B"
+  },
+  "badge-HTML5": {
+    "state": "ok",
+    "checked_at": "2026-10-15T10:20:23.862343+00:00",
+    "http_status": 200,
+    "url": "https://img.shields.io/badge/HTML5-A9B991?style=flat-square&logo=html5&logoColor=485B51"
+  },
+  "badge-CSS": {
+    "state": "ok",
+    "checked_at": "2026-10-15T10:20:28.782059+00:00",
+    "http_status": 200,
+    "url": "https://img.shields.io/badge/CSS-C4CCA2?style=flat-square&logo=css&logoColor=485B51"
+  },
+  "badge-Markdown": {
+    "state": "ok",
+    "checked_at": "2026-10-15T10:20:30.510418+00:00",
+    "http_status": 200,
+    "url": "https://img.shields.io/badge/Markdown-DCD9A9?style=flat-square&logo=markdown&logoColor=485B51"
+  }
+}

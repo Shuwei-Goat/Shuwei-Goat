@@ -1,0 +1,61 @@
+<p align="center">
+<img src="assets/hero-game.png" alt="Shuwei-Goat · 一只羊的开放世界" width="1200" />
+</p>
+<p align="center">
+<img src="profile/typing-game.svg" alt="Shuwei-Goat" width="620" />
+</p>
+
+## PORTALS
+
+**传送门**
+
+<a href="https://github.com/Shuwei-Goat?tab=repositories"><img src="assets/github-icon.svg" alt="" width="18" /> 公开仓库 ↗</a>
+
+个人网站 · **筹备中**
+
+## QUEST BOARD
+
+**项目**
+
+<!-- PROJECTS:START -->
+筹备中
+<!-- PROJECTS:END -->
+
+## SKILL INVENTORY
+
+**Skills**
+
+<!-- SKILLS:START -->
+筹备中
+<!-- SKILLS:END -->
+
+## BUILD KIT
+
+**本站搭建工具**
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/skills-dark.svg" />
+  <img src="assets/skills-light.svg" alt="本站搭建工具：HTML、CSS、Python、Markdown" width="200" />
+</picture>
+
+<img src="assets/badge-HTML5.svg" alt="HTML5" /> <img src="assets/badge-CSS.svg" alt="CSS" /> <img src="assets/badge-Markdown.svg" alt="Markdown" />
+
+## EXPLORATION LOG
+
+**GitHub 统计**
+
+<img src="profile/stats.svg" alt="GitHub 统计" width="520" />
+
+<img src="profile/languages.svg" alt="公开仓库语言" width="520" />
+
+## THE SNAKE TRAIL
+
+**贡献地图**
+
+<img src="profile/snake.svg" alt="贡献贪吃蛇" width="900" />
+
+---
+
+<p align="center">
+<img src="https://komarev.com/ghpvc/?username=Shuwei-Goat&label=visitors&color=88aa99&style=flat" alt="访问计数" />
+</p>
