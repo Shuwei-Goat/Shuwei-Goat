@@ -20,11 +20,11 @@ class ProfileChecks(unittest.TestCase):
   hero_path=ROOT/'assets/hero-game.svg'
   hero=hero_path.read_text() if hero_path.exists() else ''
   workflow=(ROOT/'.github/workflows/profile-assets.yml').read_text()
-  for word in ['<sub','<small','streak','trophy','metrics']:
+  for word in ['<sub','<small','streak','trophy','metrics','EXPLORATION LOG','THE SNAKE TRAIL','profile/stats.svg','profile/languages.svg','komarev.com']:
    self.assertNotIn(word,readme)
   for word in ['STILL EXPLORING','NO LEVELS','把好奇心','角色已就位','PLAYER PROFILE']:
    self.assertNotIn(word,hero)
-  for word in ['streak','trophy','metrics','METRICS_TOKEN']:
+  for word in ['streak','trophy','metrics','METRICS_TOKEN','card: stats','card: top-langs','Platane/snk','promote.py']:
    self.assertNotIn(word,workflow)
  def test_invalid_svg_does_not_replace_previous(self):
   with tempfile.TemporaryDirectory() as tmp:
@@ -43,5 +43,5 @@ class ProfileChecks(unittest.TestCase):
    with self.assertRaises(ValueError):safe_url(url)
  def test_manifest_account(self):
   manifest=json.loads((ROOT/'sources.json').read_text())
-  for n in ['stats','languages','views']:self.assertIn('Shuwei-Goat',manifest[n]['url'])
+  for n in ['typing-game']:self.assertIn('Shuwei-Goat',manifest[n]['url'])
 if __name__=='__main__':unittest.main()

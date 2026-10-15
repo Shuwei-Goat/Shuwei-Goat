@@ -6,9 +6,9 @@
 
 使用 `release/shuwei-goat-game.zip` 或 `release/game/`。该目录的 README.md 已是角色版。确认同名仓库状态后，将发布包内容放入公开仓库 `Shuwei-Goat/Shuwei-Goat`，包含隐藏目录 `.github/`。不要上传整个 Studio。
 
-在 Actions 手动运行 **Refresh profile artwork**。自动更新为北京时间每天 10:23。Stats、语言与 Snake 使用内置 GITHUB_TOKEN，无需 METRICS_TOKEN；工作流需要 contents:write 权限。主页已发布，Snake 首次远端运行成功。
+在 Actions 手动运行 **Refresh profile artwork**。自动更新为北京时间每天 10:23。仅保留动态用户名更新，工作流需要 contents:write 权限。主页已发布。统计、语言、贪吃蛇和访问计数已移除。
 
-已移除连续贡献、奖杯和近期活动。没有公开仓库时显示无语言数据。更新失败保留上次成功图片，服务状态记在 evidence/，不在主页添加技术脚注。
+已移除连续贡献、奖杯、近期活动及全部统计展示。更新失败保留上次成功图片，服务状态记在 evidence/，不在主页添加技术脚注。
 
 ## 添加内容
 
@@ -32,3 +32,5 @@ python3 scripts/package.py
 ## 文案约束
 
 后续页面不再增加中英文装饰口号、解释脚注或灰色小字。维护说明仅写入本文件。当前配色 #669379 → #DCD9A9。
+
+当前仅清理 README。GitHub 自带仓库列表、贡献日历和活动区不属于 README，按用户选择保留账号设置。

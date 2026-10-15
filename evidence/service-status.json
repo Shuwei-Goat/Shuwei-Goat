@@ -1,28 +1,9 @@
 {
-  "stats": {
-    "state": "ok",
-    "checked_at": "2026-10-15T10:20:19.334554+00:00",
-    "http_status": 200,
-    "url": "https://github-readme-stats.vercel.app/api?username=Shuwei-Goat&disable_animations=true&show_icons=true&hide_rank=true&hide_border=true&title_color=45694F&text_color=354B3D&icon_color=79976B&bg_color=F5F5E9"
-  },
-  "languages": {
-    "state": "unavailable",
-    "checked_at": "2026-10-15T10:06:31.981342+00:00",
-    "error": "Upstream returned an error/empty-data card",
-    "url": "https://github-readme-stats.vercel.app/api/top-langs/?username=Shuwei-Goat&layout=compact&hide_border=true&title_color=608573&text_color=718279&bg_color=F5F7F5",
-    "last_success_at": null
-  },
   "typing-game": {
     "state": "ok",
     "checked_at": "2026-10-15T10:40:29.779233+00:00",
     "http_status": 200,
     "url": "https://readme-typing-svg.demolab.com/?font=Fira+Code&size=26&duration=3200&pause=1400&color=45694F&center=true&vCenter=true&width=620&height=44&lines=Shuwei-Goat"
-  },
-  "views": {
-    "state": "ok",
-    "checked_at": "2026-10-15T10:06:40.755707+00:00",
-    "http_status": 200,
-    "url": "https://komarev.com/ghpvc/?username=Shuwei-Goat&label=visitors&color=88aa99&style=flat"
   },
   "skills-light": {
     "state": "ok",

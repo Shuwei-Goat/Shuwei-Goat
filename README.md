@@ -39,23 +39,3 @@
 </picture>
 
 <img src="assets/badge-HTML5.svg" alt="HTML5" /> <img src="assets/badge-CSS.svg" alt="CSS" /> <img src="assets/badge-Markdown.svg" alt="Markdown" />
-
-## EXPLORATION LOG
-
-**GitHub 统计**
-
-<img src="profile/stats.svg" alt="GitHub 统计" width="520" />
-
-<img src="profile/languages.svg" alt="公开仓库语言" width="520" />
-
-## THE SNAKE TRAIL
-
-**贡献地图**
-
-<img src="profile/snake.svg" alt="贡献贪吃蛇" width="900" />
-
----
-
-<p align="center">
-<img src="https://komarev.com/ghpvc/?username=Shuwei-Goat&label=visitors&color=88aa99&style=flat" alt="访问计数" />
-</p>
