@@ -6,9 +6,9 @@
 
 使用 `release/shuwei-goat-game.zip` 或 `release/game/`。该目录的 README.md 已是角色版。确认同名仓库状态后，将发布包内容放入公开仓库 `Shuwei-Goat/Shuwei-Goat`，包含隐藏目录 `.github/`。不要上传整个 Studio。
 
-在 Actions 手动运行 **Refresh profile artwork**。自动更新为北京时间每天 10:23。仅保留动态用户名更新，工作流需要 contents:write 权限。主页已发布。统计、语言、贪吃蛇和访问计数已移除。
+在 Actions 手动运行 **Refresh profile artwork**。自动更新为北京时间每天 10:23，包括动态用户名和本次新加的 Summary Cards、Capsule Render。工作流需要 contents:write 权限。旧版统计、贪吃蛇和访问计数没有恢复。
 
-已移除连续贡献、奖杯、近期活动及全部统计展示。更新失败保留上次成功图片，服务状态记在 evidence/，不在主页添加技术脚注。
+连续贡献、奖杯、metrics 模块保持移除。更新失败保留上次成功图片，服务状态记在 evidence/，不在主页添加技术脚注。
 
 ## 添加内容
 
@@ -33,4 +33,33 @@ python3 scripts/package.py
 
 后续页面不再增加中英文装饰口号、解释脚注或灰色小字。维护说明仅写入本文件。当前配色 #669379 → #DCD9A9。
 
-当前仅清理 README。GitHub 自带仓库列表、贡献日历和活动区不属于 README，按用户选择保留账号设置。
+GitHub 自带仓库列表、贡献日历和活动区不属于 README。账号已按用户后续要求开启活动隐藏，README 继续公开。
+
+## 新增效果区维护（2026-10-15）
+
+当前线上账号已经按用户后续要求开启活动隐藏。README 仍公开；此效果展区不会改动账号设置。
+
+现有主页后追加了 Summary Cards 五件套、Capsule Render 三种封面和 React Bits 三个品牌演示。静态 SVG 的官方来源均在 `sources.json`，不需要新增 Secrets。每日更新由现有工作流承担；SVG 的动画在浏览器加载时播放，GitHub 图片缓存可能延迟更新。
+
+React Bits 源码位于 `effects/`，构建文件在 `docs/`，GitHub Pages 使用 main 分支的 /docs。演示地址为 https://shuwei-goat.github.io/Shuwei-Goat/ 。README 不能运行 JavaScript，使用录制的 GIF；实际交互以 Pages 页面为准。
+
+重新构建：
+
+```bash
+cd effects
+npm ci --ignore-scripts
+npm run build
+```
+
+品牌素材已提交在 `effects/public/media/`。若修改品牌素材，可在仓库根目录运行 `node effects/scripts/artwork.mjs`（沿用 Studio 配置的 sharp 运行时），再重新构建。
+
+更新动画和核验（需本机 Playwright 与 ffmpeg）：
+
+```bash
+python3 -m http.server 8766 --bind 127.0.0.1
+# 另一终端，在仓库根目录运行
+node scripts/check_effects.mjs
+python3 scripts/test_profile.py
+```
+
+仅检查而不重录：`node scripts/check_effects.mjs --check-only`。不要把 node_modules、原始录屏帧或私密文件提交到仓库。

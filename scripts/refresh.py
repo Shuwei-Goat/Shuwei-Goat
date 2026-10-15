@@ -27,6 +27,8 @@ def validate_svg(data):
 def install(source, destination):
     data = Path(source).read_bytes()
     validate_svg(data)
+    if Path(destination).name.startswith('capsule-'):
+        data = b'\n'.join(line.rstrip() for line in data.splitlines()).strip() + b'\n'
     if Path(destination).name == 'stats.svg':
         # hide_rank hides the visible score, but upstream retains it in the accessible title.
         data = re.sub(rb'(<title\b[^>]*>[^<]*), Rank: [^<]*(</title>)', rb'\1\2', data)
@@ -51,6 +53,7 @@ def refresh(selected=None):
                 status = response.status
             validate_svg(data)
             temp = ROOT / (item['path'] + '.download')
+            temp.parent.mkdir(parents=True, exist_ok=True)
             temp.write_bytes(data)
             try:
                 install(temp, item['path'])

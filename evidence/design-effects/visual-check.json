@@ -1,0 +1,42 @@
+[
+  {
+    "width": 1100,
+    "theme": "light",
+    "errors": [],
+    "overflow": false,
+    "broken": [],
+    "gallery": true,
+    "glass": true,
+    "tiltResponded": true
+  },
+  {
+    "width": 1100,
+    "theme": "dark",
+    "errors": [],
+    "overflow": false,
+    "broken": [],
+    "gallery": true,
+    "glass": true,
+    "tiltResponded": true
+  },
+  {
+    "width": 390,
+    "theme": "light",
+    "errors": [],
+    "overflow": false,
+    "broken": [],
+    "gallery": true,
+    "glass": true,
+    "tiltResponded": true
+  },
+  {
+    "width": 390,
+    "theme": "dark",
+    "errors": [],
+    "overflow": false,
+    "broken": [],
+    "gallery": true,
+    "glass": true,
+    "tiltResponded": true
+  }
+]

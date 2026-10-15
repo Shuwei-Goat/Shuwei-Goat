@@ -11,22 +11,35 @@ concurrency:
 jobs:
   artwork:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 8
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Refresh animated username
-        run: python3 scripts/refresh.py --only typing-game
+      - name: Refresh animated username and design cards
+        run: >-
+          python3 scripts/refresh.py --only typing-game
+          summary-profile-light summary-profile-dark summary-stats-light summary-stats-dark
+          summary-languages-light summary-languages-dark summary-commits-light summary-commits-dark
+          summary-time-light summary-time-dark capsule-wave capsule-rounded capsule-blur
       - name: Commit successful changes
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add profile/typing-game.svg evidence/service-status.json
+          git add profile/typing-game.svg profile/design evidence/service-status.json
           if ! git diff --cached --quiet; then
             git commit -m 'Refresh profile artwork'
             git push
           fi
       - name: Check refresh result
-        run: python3 -c "import json; from pathlib import Path; result=json.loads(Path('evidence/service-status.json').read_text())['typing-game']; assert result['state']=='ok', result.get('error', 'Refresh failed')"
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          report = json.loads(Path('evidence/service-status.json').read_text())
+          failed = {key: value.get('error') for key, value in report.items()
+                    if (key == 'typing-game' or key.startswith(('summary-', 'capsule-')))
+                    and value['state'] != 'ok'}
+          assert not failed, failed
+          PY

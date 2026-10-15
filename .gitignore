@@ -3,3 +3,5 @@ __pycache__/
 *.tmp
 *.download
 .DS_Store
+effects/node_modules/
+output/

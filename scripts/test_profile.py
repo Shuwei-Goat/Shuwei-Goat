@@ -1,4 +1,5 @@
 import importlib.util,json,tempfile,unittest,xml.etree.ElementTree as ET,re
+from unittest.mock import patch,MagicMock
 from pathlib import Path
 from refresh import ROOT,validate_svg,install
 from update_content import project_card,safe_url
@@ -44,4 +45,27 @@ class ProfileChecks(unittest.TestCase):
  def test_manifest_account(self):
   manifest=json.loads((ROOT/'sources.json').read_text())
   for n in ['typing-game']:self.assertIn('Shuwei-Goat',manifest[n]['url'])
+ def test_refresh_creates_nested_output_folder(self):
+  from refresh import refresh
+  with tempfile.TemporaryDirectory() as tmp:
+   root=Path(tmp)
+   (root/'sources.json').write_text(json.dumps({'test':{'url':'https://example.com/card','path':'profile/design/card.svg'}}))
+   response=MagicMock();response.status=200
+   response.read.return_value=b'<svg xmlns="http://www.w3.org/2000/svg"><text>Shuwei-Goat</text></svg>'
+   response.__enter__.return_value=response
+   with patch('refresh.ROOT',root),patch('refresh.urllib.request.urlopen',return_value=response):refresh()
+   self.assertTrue((root/'profile/design/card.svg').is_file())
+   self.assertEqual(json.loads((root/'evidence/service-status.json').read_text())['test']['state'],'ok')
+ def test_existing_homepage_preserved(self):
+  before=ROOT/'evidence/design-effects/readme-before.md'
+  if before.exists():self.assertTrue((ROOT/'README.md').read_text().startswith(before.read_text().rstrip()))
+ def test_design_sources_use_real_account_and_official_hosts(self):
+  from urllib.parse import urlparse,parse_qs
+  manifest=json.loads((ROOT/'sources.json').read_text())
+  for key,item in manifest.items():
+   if key.startswith('summary-'):
+    url=urlparse(item['url'])
+    self.assertEqual(url.hostname,'github-profile-summary-cards.vercel.app')
+    self.assertEqual(parse_qs(url.query)['username'],['Shuwei-Goat'])
+   elif key.startswith('capsule-'):self.assertEqual(urlparse(item['url']).hostname,'capsule-render.vercel.app')
 if __name__=='__main__':unittest.main()
