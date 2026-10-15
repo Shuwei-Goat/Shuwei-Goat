@@ -6,7 +6,7 @@
 
 使用 `release/shuwei-goat-game.zip` 或 `release/game/`。该目录的 README.md 已是角色版。确认同名仓库状态后，将发布包内容放入公开仓库 `Shuwei-Goat/Shuwei-Goat`，包含隐藏目录 `.github/`。不要上传整个 Studio。
 
-在 Actions 手动运行 **Refresh profile artwork**。自动更新为北京时间每天 10:23。Stats、语言与 Snake 使用内置 GITHUB_TOKEN，无需 METRICS_TOKEN；工作流需要 contents:write 权限。页面尚未发布，Snake 尚未远端运行。
+在 Actions 手动运行 **Refresh profile artwork**。自动更新为北京时间每天 10:23。Stats、语言与 Snake 使用内置 GITHUB_TOKEN，无需 METRICS_TOKEN；工作流需要 contents:write 权限。主页已发布，Snake 首次远端运行成功。
 
 已移除连续贡献、奖杯和近期活动。没有公开仓库时显示无语言数据。更新失败保留上次成功图片，服务状态记在 evidence/，不在主页添加技术脚注。
 
