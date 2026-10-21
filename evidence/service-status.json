@@ -1,7 +1,7 @@
 {
   "typing-game": {
     "state": "ok",
-    "checked_at": "2026-10-20T07:47:20.521634+00:00",
+    "checked_at": "2026-10-21T07:51:04.062829+00:00",
     "http_status": 200,
     "url": "https://readme-typing-svg.demolab.com/?font=Fira+Code&size=26&duration=3200&pause=1400&color=45694F&center=true&vCenter=true&width=620&height=44&lines=Shuwei-Goat"
   },
@@ -43,79 +43,79 @@
   },
   "summary-profile-light": {
     "state": "ok",
-    "checked_at": "2026-10-20T07:47:20.728124+00:00",
+    "checked_at": "2026-10-21T07:51:04.288610+00:00",
     "http_status": 200,
     "url": "https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Shuwei-Goat&theme=vue&animation=rise&duration=3&title_color=365847&text_color=365847&bg_color=F0F5EB&chart_color=669379"
   },
   "summary-profile-dark": {
     "state": "ok",
-    "checked_at": "2026-10-20T07:47:21.591514+00:00",
+    "checked_at": "2026-10-21T07:51:05.164482+00:00",
     "http_status": 200,
     "url": "https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Shuwei-Goat&theme=nord_dark&animation=rise&duration=3&title_color=DCD9A9&text_color=E5E9DC&bg_color=23372B&chart_color=AFCAA3"
   },
   "summary-stats-light": {
     "state": "ok",
-    "checked_at": "2026-10-20T07:47:21.671484+00:00",
+    "checked_at": "2026-10-21T07:51:05.295085+00:00",
     "http_status": 200,
     "url": "https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Shuwei-Goat&theme=vue&animation=fade&duration=3&title_color=365847&text_color=365847&bg_color=F0F5EB&chart_color=669379"
   },
   "summary-stats-dark": {
     "state": "ok",
-    "checked_at": "2026-10-20T07:47:21.828672+00:00",
+    "checked_at": "2026-10-21T07:51:05.476681+00:00",
     "http_status": 200,
     "url": "https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Shuwei-Goat&theme=nord_dark&animation=fade&duration=3&title_color=DCD9A9&text_color=E5E9DC&bg_color=23372B&chart_color=AFCAA3"
   },
   "summary-languages-light": {
     "state": "ok",
-    "checked_at": "2026-10-20T07:47:21.948759+00:00",
+    "checked_at": "2026-10-21T07:51:05.595968+00:00",
     "http_status": 200,
     "url": "https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Shuwei-Goat&theme=vue&animation=draw&duration=3&title_color=365847&text_color=365847&bg_color=F0F5EB&chart_color=669379"
   },
   "summary-languages-dark": {
     "state": "ok",
-    "checked_at": "2026-10-20T07:47:22.470052+00:00",
+    "checked_at": "2026-10-21T07:51:06.057136+00:00",
     "http_status": 200,
     "url": "https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Shuwei-Goat&theme=nord_dark&animation=draw&duration=3&title_color=DCD9A9&text_color=E5E9DC&bg_color=23372B&chart_color=AFCAA3"
   },
   "summary-time-light": {
     "state": "ok",
-    "checked_at": "2026-10-20T07:47:22.532390+00:00",
+    "checked_at": "2026-10-21T07:51:06.218727+00:00",
     "http_status": 200,
     "url": "https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Shuwei-Goat&theme=vue&animation=stagger&duration=3&title_color=365847&text_color=365847&bg_color=F0F5EB&chart_color=669379&utcOffset=8"
   },
   "summary-time-dark": {
     "state": "ok",
-    "checked_at": "2026-10-20T07:47:22.939472+00:00",
+    "checked_at": "2026-10-21T07:51:06.781841+00:00",
     "http_status": 200,
     "url": "https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Shuwei-Goat&theme=nord_dark&animation=stagger&duration=3&title_color=DCD9A9&text_color=E5E9DC&bg_color=23372B&chart_color=AFCAA3&utcOffset=8"
   },
   "capsule-wave": {
     "state": "ok",
-    "checked_at": "2026-10-20T07:47:23.028657+00:00",
+    "checked_at": "2026-10-21T07:51:06.969956+00:00",
     "http_status": 200,
     "url": "https://capsule-render.vercel.app/api?type=waving&height=230&color=0%3A669379%2C100%3ADCD9A9&text=Shuwei-Goat&fontSize=62&fontColor=FFFFFF&fontAlignY=38&animation=twinkling&section=header"
   },
   "capsule-rounded": {
     "state": "ok",
-    "checked_at": "2026-10-20T07:47:23.158673+00:00",
+    "checked_at": "2026-10-21T07:51:07.160303+00:00",
     "http_status": 200,
     "url": "https://capsule-render.vercel.app/api?type=rounded&height=190&color=0%3A669379%2C100%3ADCD9A9&text=Shuwei-Goat&fontSize=62&fontColor=2F4A3F&fontAlignY=54&animation=fadeIn&section=header"
   },
   "capsule-blur": {
     "state": "ok",
-    "checked_at": "2026-10-20T07:47:23.335886+00:00",
+    "checked_at": "2026-10-21T07:51:07.336841+00:00",
     "http_status": 200,
     "url": "https://capsule-render.vercel.app/api?type=blur&height=230&color=0%3A669379%2C100%3ADCD9A9&text=Shuwei-Goat&fontSize=62&fontColor=2F4A3F&fontAlignY=54&animation=scaleIn&section=header"
   },
   "summary-commits-light": {
     "state": "ok",
-    "checked_at": "2026-10-20T07:47:23.438938+00:00",
+    "checked_at": "2026-10-21T07:51:07.495961+00:00",
     "http_status": 200,
     "url": "https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Shuwei-Goat&theme=vue&animation=load&duration=3&title_color=365847&text_color=365847&bg_color=F0F5EB&chart_color=669379"
   },
   "summary-commits-dark": {
     "state": "ok",
-    "checked_at": "2026-10-20T07:47:23.809948+00:00",
+    "checked_at": "2026-10-21T07:51:08.128796+00:00",
     "http_status": 200,
     "url": "https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Shuwei-Goat&theme=nord_dark&animation=load&duration=3&title_color=DCD9A9&text_color=E5E9DC&bg_color=23372B&chart_color=AFCAA3"
   }
